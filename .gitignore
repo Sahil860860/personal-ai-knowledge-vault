@@ -1,0 +1,14 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore local data files and generated indexes
+/data/raw/
+/data/processed/
+
+# Ignore Python virtual environment and editor settings
+*.log
+.idea/
+.vscode/

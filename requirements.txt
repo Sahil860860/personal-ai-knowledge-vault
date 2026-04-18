@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+sentence-transformers
+faiss-cpu
+pypdf
+python-dotenv
+transformers
+torch
+fpdf
