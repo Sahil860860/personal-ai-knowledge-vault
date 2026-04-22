@@ -2,7 +2,7 @@
 
 A **Retrieval-Augmented Generation (RAG)** system that ingests personal documents (PDFs) and enables natural language querying of a personal knowledge base using a local LLM.
 
-## 🚀 Features
+## Features
 
 - **Document Ingestion**: Upload and process PDF documents (medical reports, resumes, transcripts, journals, etc.)
 - **Vector Search**: Semantic search using FAISS and Sentence Transformers embeddings
@@ -12,7 +12,7 @@ A **Retrieval-Augmented Generation (RAG)** system that ingests personal document
 - **REST API**: FastAPI-powered endpoints for ingestion and querying
 - **Persistent Storage**: Saves vector indices for efficient retrieval
 
-## 📋 Tech Stack
+## Tech Stack
 
 - **Backend**: FastAPI, Uvicorn
 - **AI/ML**: Sentence Transformers, FAISS, PyTorch
@@ -20,7 +20,7 @@ A **Retrieval-Augmented Generation (RAG)** system that ingests personal document
 - **LLM**: Ollama (Mistral)
 - **Environment**: Python 3.9+, Virtual Environment
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 personal-ai-knowledge-vault/
@@ -48,7 +48,7 @@ personal-ai-knowledge-vault/
 └── README.md
 ```
 
-## 🛠️ Setup
+##  Setup
 
 ### Prerequisites
 - Python 3.9+
@@ -135,7 +135,7 @@ curl -X POST http://localhost:8000/query \
 - "What are John Doe's hobbies and interests?"
 - "Tell me about John Doe's gym routine."
 
-## 🔧 Configuration
+##  Configuration
 
 Edit `app/config.py` to customize:
 - `DATA_PATH`: Path to raw documents
@@ -144,7 +144,7 @@ Edit `app/config.py` to customize:
 - `LLM_MODEL`: Ollama model (default: Mistral)
 - `TOP_K`: Number of documents to retrieve
 
-## 📊 How It Works
+##  How It Works
 
 1. **Ingestion**: PDFs are loaded and split into chunks
 2. **Embedding**: Each chunk is converted to a vector using Sentence Transformers
@@ -152,13 +152,13 @@ Edit `app/config.py` to customize:
 4. **Query**: User query is rewritten, documents are retrieved and reranked
 5. **Generation**: Retrieved context is passed to Ollama (Mistral) for answer generation
 
-## 🔐 Security
+##  Security
 
 - `.env` file excluded from git (add API keys/secrets here)
 - Local LLM (no cloud dependencies)
 - Document data never leaves your machine
 
-## 📝 Logging
+##  Logging
 
 The application logs important events:
 - Query processing steps
@@ -168,7 +168,7 @@ The application logs important events:
 
 Check terminal output for logs while using the API.
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
 Already running on `http://localhost:8000`
@@ -179,7 +179,7 @@ For production deployment:
 2. Configure environment variables in `.env`
 3. Deploy on cloud platforms (AWS, GCP, Azure) or on-premises servers
 
-## 📚 Dependencies
+##  Dependencies
 
 See `requirements.txt` for full list. Key packages:
 - `fastapi`: Web framework
@@ -188,15 +188,15 @@ See `requirements.txt` for full list. Key packages:
 - `pypdf`: PDF processing
 - `torch`: Deep learning
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to fork and submit PRs for improvements!
 
-## 📄 License
+##  License
 
 MIT License - see LICENSE file for details
 
-## 👤 Author
+##  Author
 
 Sahil Gupta - [GitHub](https://github.com/Sahil860860)
 
